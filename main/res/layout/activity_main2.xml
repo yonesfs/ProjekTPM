@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_marginRight="30dp"
+android:layout_marginLeft="30dp"
+android:orientation="vertical"
+tools:context=".MainActivity2">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="388dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/upnyk">
+    </ImageView>
+
+
+    <EditText
+        android:id="@+id/txUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Email"
+        android:inputType="textPersonName"></EditText>
+
+    <EditText
+        android:id="@+id/texPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="Password"
+        android:inputType="textPassword"></EditText>
+
+</LinearLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginTop="15dp">
+
+    <Button
+        android:id="@+id/btnLogin"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="35dp"
+        android:gravity="center"
+        android:text="Login"></Button>
+
+    <Button
+        android:id="@+id/btnDaftar"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/btnLogin"
+        android:gravity="center"
+        android:text="Daftar"></Button>
+
+</RelativeLayout>
+
+<TextView
+    android:id="@+id/tvCreateAccount"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Lupa password ?"
+    android:layout_marginBottom="30dp"
+    android:gravity="center">
+</TextView>
+
+
+</LinearLayout>
